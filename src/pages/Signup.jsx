@@ -11,7 +11,9 @@ const Signup = () => {
         email: "",
         password: ""
 
-    })
+    });
+
+    const navigate = useNavigate();
     const handleChange = () => {
 
     }
@@ -48,7 +50,7 @@ const Signup = () => {
                 />
             </Form.Group>
             <Button variant='success' type='submit'>Register</Button>
-            {/* <p>Already have an account?</p> <Link to ="/login">Login</Link> */}
+            <p>Already have an account?</p> <Link to ="/login">Login</Link>
         </Form>
     </Container>
   )
